@@ -7,7 +7,7 @@ import visual from '../public/images/icon-visual.svg'
 function App() {
 	return (
 		<div className='w-full min-h-screen bg-white grid place-items-center'>
-			<div className='flex lg:flex-row flex-col lg:w-[735px] lg:h-[512px] w-full h-screen bg-white shadow-xl rounded-[30px]'>
+			<div className='flex lg:flex-row flex-col lg:w-[735px] lg:h-[512px] w-full h-screen bg-white lg:shadow-xl rounded-[30px]'>
 				<div className='flex flex-col lg:rounded-[30px] rounded-[0_0_30px_30px] items-center lg:w-1/2 w-full bg-gradient-to-b from-lightSlateBlue to-lightRoyalBlue'>
 					<p className='text-lightLavender lg:text-2xl text-lg lg:mb-8 mb-6 lg:mt-[39px] mt-5 mr-[6px]'>
 						Your Result
