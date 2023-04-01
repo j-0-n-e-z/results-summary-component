@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './App.css'
 import reaction from '../public/images/icon-reaction.svg'
 import memory from '../public/images/icon-memory.svg'
@@ -6,8 +5,6 @@ import verbal from '../public/images/icon-verbal.svg'
 import visual from '../public/images/icon-visual.svg'
 
 function App() {
-	const [count, setCount] = useState(0)
-
 	return (
 		<div className='w-full min-h-screen bg-white grid place-items-center'>
 			<div className='flex w-[735px] h-[512px] bg-white shadow-xl rounded-[30px]'>
