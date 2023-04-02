@@ -4,3 +4,11 @@
 	font-family: 'Hanken Grotesk', sans-serif;
 	font-size: 18px;
 }
+
+.App {
+	width: 100%;
+	min-height: 100vh;
+	background: #fff;
+	display: grid;
+	place-items: center;
+}
