@@ -1,16 +1,15 @@
-type BadgeProps = {
-	textColor: string
-	bgColor: string
-	name: string
-	value: number
-}
+import { Badge as BadgeType } from '../data/badges'
 
-export function Badge({ textColor, bgColor, name, value }: BadgeProps) {
+type BadgeProps = BadgeType & { name: string }
+
+export function Badge({ color, name, value }: BadgeProps) {
 	return (
-		<li className={`flex ${bgColor} px-4 py-3 rounded-xl items-center`}>
+		<li
+			className={`flex ${color.background} px-4 py-3 rounded-xl items-center`}
+		>
 			<img src={`./images/icon-${name}.svg`} alt={name} />
 			<p
-				className={`${textColor} lg:ml-3 ml-3 lg:text-[18px] text-[16px] capitalize`}
+				className={`${color.text} lg:ml-3 ml-3 lg:text-[18px] text-[16px] capitalize`}
 			>
 				{name}
 			</p>

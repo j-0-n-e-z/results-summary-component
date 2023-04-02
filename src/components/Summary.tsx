@@ -12,8 +12,7 @@ export const Summary = () => {
 					<Badge
 						key={badge}
 						name={badge}
-            textColor={badges[badge].textColor}
-            bgColor={badges[badge].bgColor}
+            color={badges[badge].color}
 						value={badges[badge].value}
 					/>
 				))}

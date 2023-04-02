@@ -1,28 +1,38 @@
 export type Badge = {
-	textColor: string
-	bgColor: string
+	color: {
+		text: string
+		background: string
+	}
 	value: number
 }
 
 export const badges: Record<string, Badge> = {
 	reaction: {
-		textColor: 'text-lightRed',
-		bgColor: 'bg-lightRed/10',
+		color: {
+			text: 'text-lightRed',
+			background: 'bg-lightRed/10'
+		},
 		value: 80
 	},
 	memory: {
-		textColor: 'text-orangeyYellow',
-		bgColor: 'bg-orangeyYellow/10',
+		color: {
+			text: 'text-orangeyYellow',
+			background: 'bg-orangeyYellow/10'
+		},
 		value: 92
 	},
 	verbal: {
-		textColor: 'text-greenTeal',
-		bgColor: 'bg-greenTeal/10',
+		color: {
+			text: 'text-greenTeal',
+			background: 'bg-greenTeal/10'
+		},
 		value: 61
 	},
 	visual: {
-		textColor: 'text-lightRoyalBlue',
-		bgColor: 'bg-lightRoyalBlue/10',
+		color: {
+			text: 'text-lightRoyalBlue',
+			background: 'bg-lightRoyalBlue/10'
+		},
 		value: 72
 	}
 } as const
