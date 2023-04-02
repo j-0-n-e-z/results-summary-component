@@ -7,7 +7,7 @@ export const Summary = () => {
 			<div className='text-darkGrayBlue font-bold lg:text-2xl text-lg lg:mb-8 mb-6'>
 				Summary
 			</div>
-			<ul>
+			<ul className='lg:space-y-5 space-y-4'>
 				{Object.keys(badges).map(badge => (
 					<Badge
 						key={badge}

@@ -7,7 +7,7 @@ type BadgeProps = {
 export function Badge({ color, name, value }: BadgeProps) {
 	return (
 		<li
-			className={`flex bg-${color}/10 px-4 py-3 rounded-xl lg:mb-5 mb-[25px] items-center`}
+			className={`flex bg-${color}/10 px-4 py-3 rounded-xl items-center`}
 		>
 			<img src={`./images/icon-${name}.svg`} alt={name} />
 			<p
