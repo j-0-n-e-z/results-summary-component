@@ -1,5 +1,5 @@
 import { Badge } from './Badge'
-import { badges } from '../badges'
+import { badges } from '../data/badges'
 
 export const Summary = () => {
 	return (
@@ -12,7 +12,8 @@ export const Summary = () => {
 					<Badge
 						key={badge}
 						name={badge}
-						color={badges[badge].color}
+            textColor={badges[badge].textColor}
+            bgColor={badges[badge].bgColor}
 						value={badges[badge].value}
 					/>
 				))}

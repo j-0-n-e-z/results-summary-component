@@ -1,17 +1,16 @@
 type BadgeProps = {
-	color: string
+	textColor: string
+	bgColor: string
 	name: string
 	value: number
 }
 
-export function Badge({ color, name, value }: BadgeProps) {
+export function Badge({ textColor, bgColor, name, value }: BadgeProps) {
 	return (
-		<li
-			className={`flex bg-${color}/10 px-4 py-3 rounded-xl items-center`}
-		>
+		<li className={`flex ${bgColor} px-4 py-3 rounded-xl items-center`}>
 			<img src={`./images/icon-${name}.svg`} alt={name} />
 			<p
-				className={`text-${color} lg:ml-3 ml-3 lg:text-[18px] text-[16px] capitalize`}
+				className={`${textColor} lg:ml-3 ml-3 lg:text-[18px] text-[16px] capitalize`}
 			>
 				{name}
 			</p>
