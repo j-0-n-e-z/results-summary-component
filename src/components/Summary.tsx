@@ -3,7 +3,7 @@ import { badges } from '../data/badges'
 
 export const Summary = () => {
 	return (
-		<div className='flex flex-col lg:w-1/2 w-full lg:px-10 px-8 lg:pt-9 pt-5 lg:pb-11'>
+		<div className='flex flex-col lg:w-1/2 w-full lg:px-10 px-8 lg:pt-9 pt-5 pb-11'>
 			<h2 className='text-darkGrayBlue font-bold lg:text-2xl text-lg lg:mb-8 mb-6'>
 				Summary
 			</h2>
