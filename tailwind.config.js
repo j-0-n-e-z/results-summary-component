@@ -33,7 +33,7 @@ export default {
 			},
 			backgroundImage: {
 				gradient:
-					'linear-gradient(to right, hsl(224, 30%, 27%) 50%, hsl(252, 100%, 67%) 50%, hsl(241, 81%, 54%))',
+					'linear-gradient(to right, hsl(224, 30%, 27%) 50%, hsl(252, 100%, 67%) 50%, hsl(241, 81%, 54%))'
 			}
 		}
 	},
