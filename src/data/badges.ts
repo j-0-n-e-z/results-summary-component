@@ -1,4 +1,5 @@
 export type Badge = {
+	title: 'reaction' | 'memory' | 'verbal' | 'visual'
 	color: {
 		text: string
 		background: string
@@ -6,33 +7,37 @@ export type Badge = {
 	value: number
 }
 
-export const badges: Record<string, Badge> = {
-	reaction: {
+export const badges: Badge[] = [
+	{
+		title: 'reaction',
 		color: {
 			text: 'text-lightRed',
 			background: 'bg-lightRed/10'
 		},
 		value: 80
 	},
-	memory: {
+	{
+		title: 'memory',
 		color: {
 			text: 'text-orangeyYellow',
 			background: 'bg-orangeyYellow/10'
 		},
 		value: 92
 	},
-	verbal: {
+	{
+		title: 'verbal',
 		color: {
 			text: 'text-greenTeal',
 			background: 'bg-greenTeal/10'
 		},
 		value: 61
 	},
-	visual: {
+	{
+		title: 'visual',
 		color: {
 			text: 'text-lightRoyalBlue',
 			background: 'bg-lightRoyalBlue/10'
 		},
 		value: 72
 	}
-} as const
+]

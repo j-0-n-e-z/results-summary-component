@@ -1,21 +1,21 @@
 import { Badge as BadgeType } from '../data/badges'
 
-type BadgeProps = BadgeType & { name: string }
-
-export function Badge({ color, name, value }: BadgeProps) {
+export function Badge({ title, color, value }: BadgeType) {
 	return (
 		<li
-			className={`flex ${color.background} px-4 py-3 rounded-xl items-center`}
+			className={`flex px-4 py-3 rounded-xl items-center ${color.background}`}
 		>
-			<img src={`./images/icon-${name}.svg`} alt={name} />
-			<p
-				className={`${color.text} lg:ml-3 ml-3 lg:text-[18px] text-[16px] capitalize`}
+			<img src={`./images/icon-${title}.svg`} alt={title} />
+			<span
+				className={`lg:ml-3 ml-3 lg:text-[18px] text-[16px] capitalize ${color.text}`}
 			>
-				{name}
-			</p>
+				{title}
+			</span>
 			<div className='ml-auto flex items-center'>
-				<p className='mr-2 font-bold lg:text-[18px] text-base'>{value}</p>
-				<p className='text-[#8f8afa] lg:text-[18px] text-base'>/ 100</p>
+				<span className='mr-2 font-bold lg:text-[18px] text-base'>{value}</span>
+				<span className='text-slateBlue-light lg:text-[18px] text-base'>
+					/ 100
+				</span>
 			</div>
 		</li>
 	)
